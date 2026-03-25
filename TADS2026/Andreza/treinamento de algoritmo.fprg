@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="treinamento de algoritmo"/>
+        <attribute name="authors" value="GERAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-02-25 11:02:06 "/>
+        <attribute name="created" value="R0VSQUw7REVTS1RPUC05QUZTVEhFOzIwMjYtMDItMjU7IjA5OjE3OjQyICI7MjY0Mw=="/>
+        <attribute name="edited" value="R0VSQUw7REVTS1RPUC05QUZTVEhFOzIwMjYtMDItMjU7IjExOjAyOjA2ICI7MjsyNzM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tv, c, sb, st" type="Real" array="False" size=""/>
+            <output expression="&quot;informe o sal&#225;rio base&quot;" newline="True"/>
+            <input variable="sb"/>
+            <output expression="&quot;Qual o total vendido?&quot;" newline="True"/>
+            <input variable="tv"/>
+            <assign variable="c" expression="tv*0.1"/>
+            <assign variable="st" expression="c+sb"/>
+            <output expression="&quot;A comiss&#227;o &#233;: &quot;&amp;c" newline="True"/>
+            <output expression="&quot;O Sal&#225;rio total &#233;: &quot;&amp; st" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

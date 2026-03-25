@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowgoritmo"/>
+        <attribute name="authors" value="GERAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-03 10:12:30 "/>
+        <attribute name="created" value="R0VSQUw7REVTS1RPUC05QUZTVEhFOzIwMjYtMDMtMDM7IjA4OjQxOjAxICI7MjYzMQ=="/>
+        <attribute name="edited" value="R0VSQUw7REVTS1RPUC05QUZTVEhFOzIwMjYtMDMtMDM7IjEwOjEyOjMwICI7MzsyNzM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N1, N2, N3, N4, mediaAnual, fA" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite sua nota do primeiro bimestre&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Digite a nota do segundo bimestre&quot;" newline="True"/>
+            <input variable="N2"/>
+            <output expression="&quot;Digite a nota do terceiro bimestre&quot;" newline="True"/>
+            <input variable="N3"/>
+            <output expression="&quot;Digite a nota do quarto bimestre&quot;" newline="True"/>
+            <input variable="N4"/>
+            <assign variable="mediaAnual" expression="(N1+N2+N3+N4)/4"/>
+            <output expression="&quot;Sua m&#233;dia anual &#233;: &quot;&amp;mediaAnual" newline="True"/>
+            <output expression="&quot;Digite a frequ&#234;ncia anual&quot;" newline="True"/>
+            <input variable="fA"/>
+            <if expression="(mediaAnual&lt;=7)&amp;&amp;(fA&gt;=80)">
+                <then>
+                    <output expression="&quot;Voc&#234; foi aprovado, parab&#233;ns&quot;" newline="True"/>
+                    <output expression="&quot;Sua m&#233;dia foi: &quot;&amp;mediaAnual &amp; &#13;&#10;&quot;Sua frequ&#234;ncia anual foi: &quot;&amp;fA" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; foi reprovado, estude mais&quot;" newline="True"/>
+                    <output expression="&quot;Sua m&#233;dia foi: &quot;&amp;mediaAnual &amp;&#13;&#10;&quot;Sua frequ&#234;ncia foi: &quot;&amp;fA" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
